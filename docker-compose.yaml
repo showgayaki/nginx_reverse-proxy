@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  nginx:
+  reverse-proxy_nginx:
     build: ./
-    image: nginx_reverse-proxy
-    container_name: nginx_reverse-proxy
+    image: reverse-proxy_nginx
+    container_name: reverse-proxy_nginx
     ports:
       - '80:80'
     networks:

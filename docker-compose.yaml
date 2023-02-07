@@ -2,7 +2,8 @@ version: '3'
 
 services:
   nginx:
-    image: nginx:latest
+    build: ./
+    image: nginx_reverse-proxy
     container_name: nginx_reverse-proxy
     ports:
       - '80:80'
